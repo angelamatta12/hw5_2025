@@ -1,0 +1,186 @@
+@keyframes growLogo {
+    0% {
+        width: 25px;
+        opacity: 0;
+    }
+    100% {
+        width: 475px;
+        opacity: 1;
+    }
+}
+
+#logo {
+    animation: growLogo 5s forwards;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', serif;
+    background: #f1f1f1 url('../images/concrete_seamless.png') repeat;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav_item a{
+ color:blue;
+}
+
+.nav_item a:hover {
+    color:blue;
+}
+
+.nav_item a:active {
+    color: blue; 
+}
+
+.card > header {
+    background: #288088;
+    border: solid 2px #45ADAD;
+    padding: 20px 0;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.card {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 450px;
+    width: 75%; /*ask if this is acceptable */
+}
+.pricing {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gallery img {
+    border: solid 10px #50C7C7;
+    margin: 10px;
+    width: 300px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width: 900px) {
+header {
+    flex-direction: row;
+}
+
+#logo {
+    margin-right: auto;
+}
+
+.nav_links {
+    display: flex;
+    margin-left: auto;
+}
+
+.card {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    flex: 0 1 275px;
+    width: 75%; 
+}
+
+.card > header {
+    justify-content: normal;
+    position:relative;
+    margin:0;
+}
+
+li > header {
+
+    justify-content: normal;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+body > header:first-of-type {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #logo {
+        animation: none;
+    }
+}
+
+@media print and (orientation: portrait) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: none;
+    }
+
+     .nav_links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 190px;
+
+    }
+
+    .pricing{
+        display: flex;
+        flex-direction: row;
+        align-items: last baseline;
+        margin-bottom: 50px;
+        
+    }
+    
+    
+.card {
+    border: solid 2px #45ADDD;
+    flex-basis: 325px;
+}
+.gallery, #gallery {
+        display: none;
+    }
+ 
+
+.card ul li:nth-child(2)::after {
+    content: "\1F44D"; /* Thumbs up emoji */
+    margin-right: 10px;
+}
+
+
+.card > header {
+    justify-content: normal;
+    position:relative;
+    margin:0;
+}
+
+
+header > h4 {
+    text-align: left;
+}
+
+
+
+}
